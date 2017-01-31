@@ -1,0 +1,21 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+.wrap, #tribe-events-pg-template {
+  width: 100%;
+}
+
+.refine-search #s {
+  max-width: 300px;
+}
+
+.home #content .hero {
+  margin: 4em auto 6em auto;
+}

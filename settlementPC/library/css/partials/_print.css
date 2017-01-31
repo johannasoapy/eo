@@ -1,0 +1,86 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+
+******************************************************************/
+* {
+  background: transparent !important;
+  color: black !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  -ms-filter: none !important;
+  float: none !important;
+}
+
+.page #content .post-grid {
+  width: 100%;
+}
+
+a, a:visited {
+  color: #444 !important;
+  text-decoration: underline;
+}
+
+a[href^=http]:after {
+  content: " <" attr(href) "> ";
+}
+
+.ir a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after, a[href^="/#"]:after, a[href^="https://www.addtoany"]:after, .addtoany_list a:after, .site-header a[href^=http]:after {
+  content: "";
+}
+
+pre, blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr, img {
+  page-break-inside: avoid;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+ul, img, p {
+  page-break-inside: avoid;
+}
+
+@page {
+  margin: 4em 2em;
+}
+
+p, h2, h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+.header-link:before {
+  content: '';
+}
+
+.sidebar,
+.page-navigation,
+.wp-prev-next,
+.respond-form,
+nav, .addtoany_list, a[href^="https://www.addtoany"], header-links, header-link:before, #skipto-block, #related-learning, #article-quiz, .site-footer, .backtotop, #search-container, #learner-feedback, .site-header, .breadcrumbs, #content .post-grid img, .welcome-logout, .learndash_topic_dots, #learndash_next_prev_link, #learndash_back_to_lesson, #sfwd-mark-complete, .report-error {
+  display: none !important;
+}

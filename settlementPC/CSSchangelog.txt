@@ -1,0 +1,4 @@
+CSS v2.0 changelog
+
+normalized sidebar li - all now have dotted underline, same padding, same
+sidebar a - font-weight 600

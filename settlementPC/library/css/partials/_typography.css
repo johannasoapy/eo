@@ -1,0 +1,83 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Typography
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+/*  To embed your own fonts, use this syntax
+  and place your fonts inside the
+  library/fonts folder. For more information
+  on embedding fonts, go to:
+  http://www.fontsquirrel.com/
+  Be sure to remove the comment brackets.
+*/
+@import 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Nothing+You+Could+Do|Titillium+Web:400,400i,600,600i,700';
+@font-face {
+  font-family: 'eoicomoon';
+  src: url("fonts/eoicomoon/eoicomoon.eot");
+  src: url("fonts/eoicomoon/eoicomoon.eot?#iefix") format("embedded-opentype"), url("fonts/eoicomoon/eoicomoon.woff2") format("woff2"), url("fonts/eoicomoon/eoicomoon.woff") format("woff"), url("fonts/eoicomoon/eoicomoon.ttf") format("truetype"), url("fonts/eoicomoon/eoicomoon.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'events';
+  src: url("fonts/events/events.eot");
+  src: url("fonts/events/events.eot?#iefix") format("embedded-opentype"), url("fonts/events/events.woff2") format("woff2"), url("fonts/events/events.woff") format("woff"), url("fonts/events/events.ttf") format("truetype"), url("fonts/events/events.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello/fontello.eot");
+  src: url("fonts/fontello/fontello.eot?#iefix") format("embedded-opentype"), url("fonts/fontello/fontello.woff2") format("woff2"), url("fonts/fontello/fontello.woff") format("woff"), url("fonts/fontello/fontello.ttf") format("truetype"), url("fonts/fontello/fontello.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+The following is based of Typebase:
+https://github.com/devinhunt/typebase.css
+I've edited it a bit, but it's a nice starting point.
+*/
+/*// font stacks*/
+/*
+these fonts are imported in the functions file
+*/
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  /*  // cleaning up the ragged lines and breaks*/
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  /*  // sets a minimum number of characters before and after the break*/
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  /*// enabling fancy ligatures when available*/
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  /*-ms-font-feature-settings: "liga", "dlig";
+       -o-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";*/
+}
