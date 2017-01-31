@@ -1,0 +1,80 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Alert Styles
+
+If you want to use these alerts in your design, you can. If not,
+you can just remove this stylesheet.
+
+******************************************************************/
+
+
+
+// alerts and notices
+%alert {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+
+.alert-help {
+  @extend %alert;
+  border-color: darken($alert-yellow, 5%);
+  background: $alert-yellow;
+}
+
+.alert-info {
+  @extend %alert;
+  border-color: darken($alert-blue, 5%);
+  background: $alert-blue;
+}
+
+.alert-error {
+  @extend %alert;
+  border-color: darken($alert-red, 5%);
+  background: $alert-red;
+}
+
+.alert-success {
+  @extend %alert;
+  border-color: darken($alert-green, 5%);
+  background: $alert-green;
+}
+
+@keyframes slideinmobile {
+    0% {margin-right: -400px;}
+    50% {margin-right: -400px;}
+    100% {margin-right: 0;}
+}
+
+.important-notice {
+    animation-name: slideinmobile;
+    animation-duration: 2s;
+    max-width: 320px;
+    background: $white;
+    background: $white-transluc;
+    font-size: 0.8em;
+    padding: 0 1em;
+    
+    p {
+        float: left;
+        margin: 0.8em;
+    }
+    .orange-btn {
+        @extend %btn;
+        font-size: 0.9em;
+        line-height:24px;
+        padding: 0 12px;
+        margin-top: -4px;
+        background-color: $bones-pink;
+        color: $white !important;
+        &:hover,
+          &:focus {
+            background-color: darken($bones-pink, 4%);
+          }
+          &:active {
+            background-color: darken($bones-pink, 5%);
+          }
+    }
+}

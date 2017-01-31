@@ -1,0 +1,69 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #363a3e;
+$black-transluc:    rgba(0,0,0,0.5);
+$white:             #fff;
+$white-transluc:    rgba(255,255,255,0.8);
+
+$light-gray:        #FFFBF5;
+$gray:              #f2eee9;
+$gray-transluc:     rgba(242, 245, 240, 0.85);
+$text-color:        #282b2e;
+$meta-gray:         #8b8f96;
+$dkgray-transluc: rgba(102,112,122,0.8);
+
+$tan:               #f2f2ee;
+
+$theme-transluc:    rgba(34,38,40,0.8);
+$theme-transluc-h:    rgba(34,38,40,0.75);
+$theme-transluc-l:    rgba(34,38,40,0.65);
+$theme-transluc-e:    rgba(34,38,40,0.75);
+$theme-transluc-ll:    rgba(34,38,40,0.5);
+
+$bones-pink:        #d87a0f;//#f5820d;
+$blue:              #008b91;
+$green:             #63b52d;
+
+$link-color:        $blue;
+$link-hover:        lighten($blue,10%);
+
+$dark-pink:         darken($bones-pink,10%);
+$dark-pink-trans:   rgba(210,106,2,0.8);
+$link-color-hf:        lighten($green,25%);
+$link-hover-hf:        lighten($green,20%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+// Animations
+@keyframes pulse {
+    0%   {opacity: 1;}
+    65%  {opacity: 0.75;}
+    100% {opacity: 1;}
+}

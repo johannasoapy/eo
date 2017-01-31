@@ -1,0 +1,344 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+body {
+    font-size: 105%;
+}
+h1, .h1 {
+  font-size: 2.4em;
+}
+.wrap, #tribe-events-pg-template {
+    width: 92%;
+    max-width: 1280px;
+}
+
+.primary-navigation, .primary-navigation-live {
+    .nav-menu {
+      li{
+        ul.sub-menu,
+        ul.children {
+          li{
+            font-size: 1em;
+            width: 24.4%;
+          }
+        }
+      }
+    }
+}
+
+.theme-submenu {
+	ul {
+		li {
+			font-size: 1.1em;
+			width: 31%;
+			margin: 0.6em 1% 0.6em 1%;
+		}
+	}
+}
+aside.standout-block {
+  padding: 1.5em;
+    margin-top: 0;
+}
+
+.e-facilitator > div {
+      &:first-child {
+		margin-right: 4%;
+		border-right: 1px dotted $meta-gray;
+	}
+}
+.profile-details {
+	max-width: 65%;
+}
+/********************************
+GRID
+*********************************/
+.stack-group {
+  padding: 1em 2em 1em 0;
+}
+  .d-all  {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .d-1of2 {
+    width: 48.75%;
+  }
+
+  .d-1of3 {
+    width: 31.499%;
+  }
+
+  .d-2of3 {
+    width: 66.001%;
+  }
+
+  .d-1of4 {
+    width: 22.875%;
+  }
+
+  .d-3of4 {
+    width: 74.625%;
+  }
+
+  .d-1of5 {
+    width: 18%;
+  }
+
+  .d-2of5 {
+    width: 36%;
+  }
+
+  .d-3of5 {
+    width: 54%;
+  }
+
+  .d-4of5 {
+    width: 79.5%;
+  }
+
+  .d-1of6 {
+    width: 16.6666666667%;
+  }
+
+  .d-1of7 {
+    width: 14.2857142857%;
+  }
+
+  .d-2of7 {
+    width: 28.5714286%;
+  }
+
+  .d-3of7 {
+    width: 42.8571429%;
+  }
+
+  .d-4of7 {
+    width: 57.1428572%;
+  }
+
+  .d-5of7 {
+    width: 71.4285715%;
+  }
+
+  .d-6of7 {
+    width: 85.7142857%;
+  }
+
+  .d-1of8 {
+    width: 12.5%;
+  }
+
+  .d-1of9 {
+    width: 11.1111111111%;
+  }
+
+  .d-1of10 {
+    width: 10%;
+  }
+
+  .d-1of11 {
+    width: 9.09090909091%;
+  }
+
+  .d-1of12 {
+    width: 8.33%;
+  }
+.last-col {
+  float: right;
+  margin-right: 0 !important;
+}
+.announcement-bg {
+	#announcement {
+		p {
+			padding: 0.5em 1em;
+			float: left;
+			&.left {
+				width: 13%;
+				min-width: 180px;
+			}
+			&.right {
+				width: 83%;
+			}
+		}
+	}
+}
+/********************************
+CONTENT
+*********************************/
+.home {
+    #content {
+        .hero {
+            .t-1of2, d-1of2, .t-1of3, .d-1of3, .t-2of3, .d-2of3 {
+                padding: 3em 3em 2em;
+            }
+            margin: 3.5em auto;
+            #loginform {
+                margin: 0 auto;
+            }
+            .lostpass {
+                margin: 0.8em 0 0 5.5%;
+            }
+            a.register {
+                margin: 1em 2.5% 1em 0;
+            }
+        }
+        .hero-inner {
+            .extra-margin {
+                margin: 1.2em 0;
+            }
+        }
+        .upcoming {
+            section {
+                padding: 4em 0;
+            }
+        }
+    }
+    
+    
+}
+.bbp-user-edit {
+    #bbpress-forums #bbp-your-profile fieldset input, #bbpress-forums #bbp-your-profile fieldset textarea, #bbpress-forums #bbp-your-profile fieldset fieldset.password {
+        float: left;
+        width: 80%;
+    }
+    #bbpress-forums #bbp-your-profile fieldset label[for] {
+        width: 20%;
+        text-align: right;
+        padding: 0.5em;
+    }
+}
+.home #content .upcoming {
+  h2, .h2 {
+	font-size: 2.5em;
+  }
+}
+.page #content .post-grid {
+	width:30.3%;
+	margin: 1.5%;
+	height: 288px;
+}
+#content .after-event .post-grid {
+    height: 248px;
+    .tribe-event-date-start, .tribe-event-time, .recurringinfo {
+        vertical-align: baseline;
+    }
+}
+.page-template-page-profile #content .post-grid, .page-template-page-my-articles #content .post-grid {
+	width:48%;
+	margin: 1%;
+}
+.home {
+    #content .post-grid {
+		height: 318px;
+	    &.coffee-chat {
+		 height: 318px;
+	    }
+	}
+}
+.entry-content {
+    padding: 2em 3.5em;
+}
+.topic-title, .page-title, .archive-title  {
+    padding: 0.5em 1.5em;
+}
+.page-template-page-live, .page-template-page-live {
+    .page-title {
+        padding: 0.4em 0.8em;
+    }
+}
+.hentry.themepage, .hentry.page {
+  .byline-wrap, footer  {
+      padding: 0.5em 2em;
+    }
+    footer {
+        padding: 2em 3.5em;
+    }
+}
+.hentry.article, .hentry.type-post, .hentry.sfwd-courses, .hentry.sfwd-lessons, .hentry.sfwd-topic, .hentry.sfwd-quiz, .hentry.type-attachment, .hentry.tribe-article {
+    .entry-content, header, footer  {
+      padding: 1.5em;
+    }
+}
+
+.archive, .search {
+    .hentry.article, .hentry.type-post, .hentry.sfwd-courses, .hentry.sfwd-lessons, .hentry.sfwd-topic, .hentry.sfwd-quiz, .hentry.themepage, .hentry.page  {
+      .entry-content, header, footer  {
+    padding: 1em;
+      }
+    }
+}
+.gallery-columns-3 {
+    dl {
+        width: 30%;
+    }
+}
+.gallery-columns-4 {
+    dl {
+        width: 22%;
+    }
+}
+.image-title {
+	h2 {
+		font-size: 2em;
+	}
+}
+.refine-search {
+  #s {
+    max-width: 240px;
+	margin-bottom: 0;
+  }
+  .checkboxes {
+	fieldset {
+	  margin-bottom: 0;
+	}
+  }
+  
+}
+.single-article {
+    .language_level-lower-intermediate-clb-3-4 {
+        #article-main {
+            border-top: 1px solid #ddd;
+            margin-top: -1px;
+            padding: 2em 0;
+        }
+    }
+}
+.switcher, #content .switcher-alternative {
+    margin-bottom: 0 !important;
+    background: $gray;
+    label, a.label {
+        margin: 0 1px;
+        border: 0 none;
+        &.active{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border:1px solid #ddd;
+            border-bottom: 1px solid $white;
+            display: inline-block;
+            pointer-events: none;
+            background: $white;
+            &:before {
+                display: none;
+            }
+        }
+        &:before {
+            background-size: 20px 20px;
+            height: 20px;
+            width: 20px;
+        }
+        &:hover, &:focus {
+            text-decoration: underline;
+            background: $white;
+        }
+    }
+    input {
+        display: none;
+    }
+}

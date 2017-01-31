@@ -1,0 +1,190 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+/*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.primary-navigation, .primary-navigation-live {
+	.nav-menu {
+		li {
+			ul.sub-menu,
+			ul.children {
+	
+				li {
+					float: left;
+					width: 49.4%;
+					margin: 0.3%;
+                    ul {
+                        li {
+                            float: none;
+                            margin: 0.2em auto;
+                        }
+                    }
+	
+				}
+	
+			}
+	
+		} /* end .menu li */
+	
+	} /* end .nav-menu */
+	
+} /* end .primary-navigation */
+
+.theme-submenu {
+	ul {
+		li {
+			float: left;
+			width: 48%;
+			height: 58px;
+			margin: 0.3em 1% 0.3em 1%;
+			height: auto;
+			margin: 0.3em 1% 0.3em 1%;
+			a {
+				height: 84px;
+				&:before {
+					right: 0;
+					padding: 10px;
+				}
+			}
+		}	
+	}
+	
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.site-header {
+    .project-links {
+        #login {
+            padding-left: 6px;
+        }
+        .register, #profile-toggle {
+            padding-right: 20px;
+        }
+        .eo-parent {
+            display: inline-block;
+        }
+    }
+    #inner-header {
+        padding-bottom: 1em;
+    }
+}
+
+/*********************
+ALERTS
+*********************/
+@keyframes slideinmid {
+    0% {margin-right: -500px;}
+    50% {margin-right: -500px;}
+    100% {margin-right: 0;}
+}
+.important-notice {
+    animation-name: slideinmid; 
+    max-width: 500px;
+    p {
+    }
+    .orange-btn {
+    }
+}
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.home {
+    #content {
+        .hero {
+            padding: 2em;
+        }
+        .home-cta-btns a {
+            float: left;
+            width: 31%;
+            max-width: 200px;
+            margin: 1em 2% 1em 0;
+        }
+        .hero a.register {
+            float: left;
+            margin: 1em 1% 1em 0;
+            width: 60%;
+        }
+        .hero a.learn-more {
+            width: auto;
+            margin: 1em 0 0;
+            float: left;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+	.content-wrap-mobile {
+		width: 100%;
+		min-height: 100%;
+		position: fixed;
+		z-index: 0;
+		background-image: url(../images/skating-mobile.jpg);
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+}
+/* entry content */
+.entry-content {
+
+
+	/* at this larger size, we can start to align images */
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+
+} /* end .entry-content */
+.addtoany_list {
+	float: right;
+
+}
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+.footer-links {
+	ul {
+		li {}
+	}
+} /* end .footer-links */
+

@@ -1,0 +1,166 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Button Styles
+
+Buttons are a pretty important part of your site's style, so it's
+important to have a consistent baseline for them. Use this stylesheet
+to create all kinds of buttons.
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+
+/*********************
+BUTTON DEFAULTS
+We're gonna use a placeholder selector here
+so we can use common styles. We then use this
+to load up the defaults in all our buttons.
+
+Here's a quick video to show how it works:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+%btn, button, input[type="button"], .btn , a.btn, #sfwd-mark-complete input[type="submit"], .wp-core-ui .quicktags-toolbar input.button.button-small, input[type="submit"] {
+  display: inline-block;
+  position: relative;
+  font-family: $sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+    background-image: none;
+  @include transition(background-color 0.14s ease-in-out);
+}
+#content {
+    %btn, button, input[type="button"], .btn , a.btn, #sfwd-mark-complete input[type="submit"], .wp-core-ui .quicktags-toolbar input.button.button-small, input[type="submit"], .btn-blue, .learndash_checkout_button input[type="submit"] {
+  color: $white !important;
+  background-color: $link-color;
+
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+    background-color: $link-hover;
+  }
+
+  &:active {
+    top: 1px;
+  } 
+}
+    .btn-blue, .learndash_checkout_button input[type="submit"] {
+        text-transform: lowercase;
+        display: block;
+        max-width: 200px;
+        &:first-letter, &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+.wp-core-ui .quicktags-toolbar input.button.button-small {
+  font-size: 12px;
+  line-height: 14px;
+}
+/*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+
+.orange-btn, .btn, a.btn {
+  @extend %btn; 
+  background-color: $bones-pink;
+  a{
+      color: $white !important;
+      &:hover, &:focus {
+      text-decoration: none;
+    } 
+}
+  &:hover,
+  &:focus {
+    background-color: darken($bones-pink, 4%);
+  }
+
+  &:active {
+    background-color: darken($bones-pink, 5%);
+  }
+
+}
+.blue-btn, #content article p a.blue-btn, .wpProQuiz_button {
+  @extend %btn;
+  background-color: $blue;
+    a{
+      color: $white !important;
+      &:hover, &:focus {
+      text-decoration: none;
+    }
+}
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%);
+  }
+
+  &:active {
+    background-color: darken($blue, 6%);
+  }
+}
+.wpProQuiz_button {
+  //display: inline-block !important;
+  position: relative !important;
+  font-family: $sans-serif !important;
+  text-decoration: none !important;
+  font-size: 0.9em !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  padding: 8px 24px !important;
+  border-radius: 4px !important;
+  border: 0 !important;
+  cursor: pointer !important;
+    background-image: none !important;
+  @include transition(background-color 0.14s ease-in-out);
+  background-color: $blue !important;
+    box-shadow: none  !important;
+    a{
+      color: $white !important;
+      &:hover, &:focus {
+      text-decoration: none !important;
+    }
+}
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%) !important;
+  }
+
+  &:active {
+    background-color: darken($blue, 6%) !important;
+  }
+}
+.green-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $green;
+    a{
+      color: $white !important;
+      &:hover, &:focus {
+      text-decoration: none;
+    } 
+  }
+  &:hover,
+  &:focus {
+    background-color: darken($green, 4%);
+  }
+
+  &:active {
+    background-color: darken($green, 6%);
+  }
+}
+}
+.alm-btn-wrap {
+    clear: both;
+    text-align: center;
+    padding: 2em 0;
+}
+
